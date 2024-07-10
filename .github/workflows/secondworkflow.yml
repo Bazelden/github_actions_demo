@@ -1,0 +1,15 @@
+name: second workflow demo
+
+#here we are using on push event to trigger the workflow when a push to github occurs
+on: push
+
+#we then add jobs as usual to the workflow
+jobs: 
+    deploy_app:
+        runs-on: ubuntu:latest
+        steps:
+            - name: download code
+              uses: actions/checkout@v4
+
+#the above job is going to use a custom action from the marketplace and dispite the connotations the actions are free.#
+
