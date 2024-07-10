@@ -1,9 +1,15 @@
 #Here we will be covering context, expressions and activity finders
 name: Output Information
-on: workflow_dispatch
+on: 
+    pull_request: 
+        types: [opened, synchronize]
+    workflow_dispatch:
+        
 jobs:
     output:
         runs-on: ubuntu-latest
         steps:
             - name: output 'GitGub' context
               run: echo "${{ toJson(github) }}"
+
+#The above code is going to output the context of the github object in json format to the console using the toJson function which is passed github as an argument which presents the metadata of our github repository.
