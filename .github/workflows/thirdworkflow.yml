@@ -1,0 +1,9 @@
+#Here we will be covering context, expressions and activity finders
+name: Output Information
+on: workflow_dispatch
+jobs:
+    output:
+        runs-on: ubuntu-latest
+        steps:
+            - name: output 'GitGub' context
+              run: echo "${{ toJson(github) }}"
