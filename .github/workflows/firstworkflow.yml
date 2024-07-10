@@ -17,5 +17,5 @@ jobs:
         #Here we are running multiple steps under one run using a pipe symbol to combo tasks
       - name: combination execute
         run: |
-          echo: "Jump, Punch, Kick" 
-          echo: "Combo Breaker" 
+          echo "Jump, Punch, Kick" 
+          echo "Combo Breaker" 
