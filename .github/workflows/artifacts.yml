@@ -20,4 +20,4 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: my-artifact
-                  path: newfile.txt
+                  path: /home/runner/work/GitHub_Actions_Demo/GitHub_Actions_Demo/newfile.txt
