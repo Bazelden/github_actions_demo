@@ -29,3 +29,11 @@ jobs:
               run: |
                 python3 -c "import requests; r=requests.get('http://localhost:8080'); print(r.status_code)"
                 curl -s localhost:8080
+
+# End of first section #
+
+    deploy_web_app:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy a container to a cloud provider
+              run: echo "Deploying..."
