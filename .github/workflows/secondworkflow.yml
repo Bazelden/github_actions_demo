@@ -13,3 +13,9 @@ jobs:
 
 #the above job is going to use a custom action from the marketplace and dispite the connotations the actions are free.#
 
+            - name: investigate
+              run: |
+                pwd
+                ls -lart
+
+#the above code is then going to
