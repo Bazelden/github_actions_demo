@@ -1,3 +1,3 @@
 # Github actions testing environment #
 
-# This is a simple repository to test github actions. #
+# This is a simple repository to test github actions. =D #
