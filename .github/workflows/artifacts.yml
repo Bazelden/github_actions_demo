@@ -9,10 +9,10 @@ jobs:
         steps:
             - name: Create and edit file
               run: |
-                touch "newfile.txt"
-                echo "Hello World" > newfile.txt
+                touch "newfile"
+                echo "Hello World" > newfile
             - name: Upload artifact
               uses: actions/upload-artifact@v4
               with:
                   name: my-artifact
-                  path: /home/runner/work/GitHub_Actions_Demo/GitHub_Actions_Demo/newfile.txt
+                  path: /home/runner/work/GitHub_Actions_Demo/GitHub_Actions_Demo/newfile
