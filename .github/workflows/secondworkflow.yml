@@ -33,6 +33,7 @@ jobs:
 # End of first section #
 
     deploy_web_app:
+        needs: [deploy_app  ]
         runs-on: ubuntu-latest
         steps:
             - name: Deploy a container to a cloud provider
