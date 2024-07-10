@@ -14,3 +14,8 @@ jobs:
         run: echo "hello world!"
       - name: the wisdom
         run: echo "Do or do not, there is no try"
+        #Here we are running multiple steps under one run using a pipe symbol to combo tasks
+      - name: combination execute
+        run: |
+          echo: "Jump, Punch, Kick" 
+          echo: "Combo Breaker" 
