@@ -1,0 +1,16 @@
+#first we name the workflow
+name: first workflow demo
+
+#then we use the on as a trigger - workflow dispatch is a manual trigger
+on: workflow_dispatch
+
+#we can then line up jobs which will act as a starting point for the instructions
+jobs:
+  first_workflow_job:
+    runs-on: ubuntu-latest
+    #these are the instructions for our workflow to follow
+    steps: 
+      - name: hello world
+        run: echo "hello world!"
+      - name: the wisdom
+        run: echo "Do or do not, there is no try"
