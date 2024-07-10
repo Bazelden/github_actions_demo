@@ -1,7 +1,7 @@
 name: second workflow demo
 
 #here we are using on push event to trigger the workflow when a push to github occurs
-on: push
+on: [push, workflow_dispatch]
 
 #we then add jobs as usual to the workflow
 jobs: 
