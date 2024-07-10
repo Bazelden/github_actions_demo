@@ -1,0 +1,23 @@
+#Here we will be creating a workflow that showcases how artifacts work with github actions.
+
+name: Artifacts Demo
+on: push
+
+jobs:
+    artifact-creation:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Create and edit file
+              run: |
+                touch newfile.txt
+                echo "Hello World" > newfile.txt
+
+    artifact-upload:
+        needs: artifact-creation
+        runs-on: ubuntu-latest
+        steps:
+            - name: Upload artifact
+              uses: actions/upload-artifact@v4
+              with:
+                  name: my-artifact
+                  path: my_artifact_file

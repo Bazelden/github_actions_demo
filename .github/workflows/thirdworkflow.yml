@@ -10,6 +10,9 @@ on:
             - jack-brach
             - steve-branch
             - 'dev_*'
+        paths-ignore:
+            - 'readme.md'
+            - '.github/workflows/*'
 
 jobs:
     output:
